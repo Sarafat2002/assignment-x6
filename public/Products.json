@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image":"https://i.ibb.co.com/zWxhX5KZ/10.png",
+      "name": "AI Writing Pro",
+      "badge": "Best Seller",
+      "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+      "price": 29,
+      "billing": "Mo",
+      "features": [
+        "Unlimited AI generations",
+        "50+ writing templates",
+        "Grammar checker"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": 2,
+      "image":"https://i.ibb.co.com/pvBJZ935/11.png",
+      "name": "Design Templates Pack",
+      "badge": "Popular",
+      "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+      "price": 49,
+      "billing": "One-Time",
+      "features": [
+        "2000+ templates",
+        "Monthly updates",
+        "Commercial license"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": 3,
+      "image":"https://i.ibb.co.com/ycT2jhfB/12.png",
+      "name": "Premium Stock Assets",
+      "badge": "New",
+      "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+      "price": 19,
+      "billing": "Mo",
+      "features": [
+        "10M+ assets",
+        "Commercial use",
+        "No attribution"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": 4,
+      "image":"https://i.ibb.co.com/N2BMLD3n/13.png",
+      "name": "Automation Toolkit",
+      "badge": "Popular",
+      "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+      "price": 79,
+      "billing": "Mo",
+      "features": [
+        "50+ automations",
+        "API access",
+        "Custom workflows"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": 5,
+      "image":"https://i.ibb.co.com/svgXX2dC/14.png",
+      "name": "Resume Builder Pro",
+      "badge": "New",
+      "description": "Create professional resumes and cover letters that land interviews.",
+      "price": 15,
+      "billing": "One-Time",
+      "features": [
+        "100+ templates",
+        "ATS optimization",
+        "Export to PDF"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": 6,
+      "image":"https://i.ibb.co.com/XZ5JzZJs/15.png",
+      "name": "Social Media Content Kit",
+      "badge": "Best Seller",
+      "description": "Complete toolkit for creating engaging social media content across all platforms.",
+      "price": 39,
+      "billing": "Mo",
+      "features": [
+        "5000+ assets",
+        "Scheduler included",
+        "Analytics dashboard"
+      ],
+      "buttonText": "Buy Now"
+    }
+  ]
+}
