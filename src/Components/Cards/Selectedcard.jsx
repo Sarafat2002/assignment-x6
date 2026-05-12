@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Selectedcard = () => {
+const Selectedcard = ({ jasonProps, selected, setSelected,showCart,setShowCart }) => {
   return (
-    <div>Selectedcard</div>
+    <div>
+      Selectedcard
+    </div>
   )
 }
 

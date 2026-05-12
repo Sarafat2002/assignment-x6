@@ -19,7 +19,13 @@ const Nav = ({selected}) => {
                 </ul>
             </div>
             <div className='flex gap-5 justify-center'>
-                <button className='text-xl relative flex items-center'><PiShoppingCart /> <span>{selected.length}</span>  </button>
+                   <button className="relative text-xl flex items-center">
+      <PiShoppingCart />
+
+      <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
+        {selected.length}
+      </span>
+    </button>
                 <button>Login</button>
                 <button className='px-6 py-2 text-white text-xl rounded-full bg-gradient-to-r from-blue-600 to-purple-700'>Get Started</button>
             </div>
