@@ -5,7 +5,7 @@ import Selectedcard from "./Selectedcard";
 
 const Cards = ({ jasonProps, selected, setSelected }) => {
 
-    const [showCart, setShowCart] = useState(false);
+    const [showCart, setShowCart] = useState("products");
 
     const productData = use(jasonProps);
     const allData = productData.products;
@@ -26,18 +26,19 @@ const Cards = ({ jasonProps, selected, setSelected }) => {
                 <p className='py-10 text-gray-400'>Choose from our curated collection of premium digital products designed
                     <br />to boost your productivity and creativity</p>
                 <div className='flex gap-5  justify-center'>
-                    <button className='bg-gradient-to-r from-blue-600 to-purple-700 px-5 py-2 rounded-full text-white'>Products</button>
-                    <button onClick={() => { setShowCart(!showCart); console.log(selected) }} >Card ({selected.length})</button>
+                    <button onClick={()=>setShowCart("products")}
+                    className='bg-gradient-to-r cursor-pointer from-blue-600 to-purple-700 px-5 py-2 rounded-full text-white'>Products</button>
+                    <button className='px-5 py-2 rounded-full hover:bg-blue-200 cursor-pointer' onClick={() => setShowCart("cart")} >Card ({selected.length})</button>
                 </div>
             </div>
 
             {
-                !showCart&&(
+                showCart === "products" &&(
                     <div className='grid lg:grid-cols-3 gap-20 max-w-[91%] mx-auto'>
                         {
                             allData?.map((product) => {
                                 return (
-                                    <div className='shadow-md rounded-md p-8' key={product.id}>
+                                    <div className='shadow-md rounded-md p-8 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:rotate-1 cursor-pointer ' key={product.id}>
                                         <img src={product.image} alt="" />
                                         <h1 className='text-3xl font-bold pt-5'>{product.name}</h1>
                                         <p className='py-5'>{product.description}</p>
@@ -59,7 +60,7 @@ const Cards = ({ jasonProps, selected, setSelected }) => {
                                         </div>
                                         <div className='flex justify-center mt-5'>
                                             <button onClick={() => BuyHandler(product.id)}
-                                                className='text-center text-white bg-gradient-to-r from-blue-600 to-purple-700 w-full rounded-full py-3 justify-center'>
+                                                className='text-center text-white cursor-pointer bg-gradient-to-r from-blue-600 to-purple-700 w-full rounded-full py-3 justify-center'>
                                                 {product.buttonText}</button>
                                         </div>
                                     </div>
@@ -71,7 +72,7 @@ const Cards = ({ jasonProps, selected, setSelected }) => {
             }
 
             {
-                showCart && (
+                showCart ==="cart" && (
                     <Selectedcard selected={selected} setSelected={setSelected} showCart={showCart} setShowCart={setShowCart} />
                 )
             }
