@@ -2,6 +2,12 @@ import React from 'react'
 import { FiShoppingCart } from "react-icons/fi";
 
 const Selectedcard = ({ selected, setSelected }) => {
+  const totall = selected.reduce((sum,product)=>sum+product.price,0);
+
+  const deleteHandler = (id)=>{
+    const deleteProduct = selected.filter((product)=>product.id!==id);
+    setSelected(deleteProduct);
+  }
   return (
     <div>
       {
@@ -35,12 +41,22 @@ const Selectedcard = ({ selected, setSelected }) => {
                         </div>
                       </div>
                       <div>
-                        <button>Remove</button>
+                        <button className='cursor-pointer' onClick={()=>deleteHandler(product.id)} >Remove</button>
                       </div>
                     </div>
                   )
                 })
               }
+
+              <div>
+                <div className='flex justify-between'>
+                  <p className='text-gray-500 text-2xl'>Total :</p>
+                  <p className='font-bold text-2xl'>${totall}</p>
+                </div>
+                <div className='flex justify-center my-5'>
+                  <button className='w-full px-6 py-2 bg-purple-700 text-white rounded-full'>Proceed</button>
+                </div>
+              </div>
             </div>
           </div>
         )

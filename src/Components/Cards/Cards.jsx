@@ -15,7 +15,6 @@ const Cards = ({ jasonProps, selected, setSelected }) => {
         const newData = allData.find((product) => product.id === id);
 
         setSelected([...selected, newData]);
-        console.log(allData);
     }
 
 
@@ -27,7 +26,7 @@ const Cards = ({ jasonProps, selected, setSelected }) => {
                     <br />to boost your productivity and creativity</p>
                 <div className='flex gap-5  justify-center'>
                     <button onClick={()=>setShowCart("products")}
-                    className='bg-gradient-to-r cursor-pointer from-blue-600 to-purple-700 px-5 py-2 rounded-full text-white'>Products</button>
+                    className='bg-gradient-to-r cursor-pointer from-blue-600 to-purple-700 px-5 py-2 rounded-full text-white  hover:bg-blue-200'>Products</button>
                     <button className='px-5 py-2 rounded-full hover:bg-blue-200 cursor-pointer' onClick={() => setShowCart("cart")} >Card ({selected.length})</button>
                 </div>
             </div>
