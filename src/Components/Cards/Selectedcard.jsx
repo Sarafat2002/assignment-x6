@@ -1,20 +1,27 @@
 import React from 'react'
 import { FiShoppingCart } from "react-icons/fi";
 
-const Selectedcard = ({ selected, setSelected }) => {
+const Selectedcard = ({ selected, setSelected,addData,setAddData }) => {
   const totall = selected.reduce((sum,product)=>sum+product.price,0);
 
   const deleteHandler = (id)=>{
     const deleteProduct = selected.filter((product)=>product.id!==id);
+    setAddData(addData.filter(itemId => itemId !== id));
     setSelected(deleteProduct);
   }
+
+  const checkHandler = () => {
+   setAddData([]);
+   setSelected([])
+  }
+
   return (
     <div>
       {
         selected.length === 0 ? (
           <div className='w-[81%] bg-gray-100 shadow-md mx-auto p-10'>
 
-            <h3 className='font-bold'>Your Card</h3>
+            <h3 className='font-bold py-5'>Your Card</h3>
 
             <div className='flex justify-center'>
               <p className='text-8xl text-gray-300'><FiShoppingCart /></p>
@@ -54,7 +61,8 @@ const Selectedcard = ({ selected, setSelected }) => {
                   <p className='font-bold text-2xl'>${totall}</p>
                 </div>
                 <div className='flex justify-center my-5'>
-                  <button className='w-full px-6 py-2 bg-purple-700 text-white rounded-full'>Proceed</button>
+                  <button onClick={checkHandler }
+                   className=' cursor-pointer w-full px-6 py-2 bg-purple-700 text-white rounded-full'>Proceed tocheckout</button>
                 </div>
               </div>
             </div>

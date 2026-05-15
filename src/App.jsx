@@ -22,7 +22,7 @@ function App() {
       <Nav selected={selected}/>
       <Hero/>
       <Tools/>
-     <Suspense fallback={<p className='text-center text-gray-500 py-5'>lodding........</p>}>
+     <Suspense>
       <Cards jasonProps={jasonProps} selected={selected} setSelected={setSelected} />
      </Suspense>
     </>
