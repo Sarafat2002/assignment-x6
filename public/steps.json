@@ -1,0 +1,26 @@
+
+{
+    "steps":[
+        {
+            "id":1,
+            "circle":1,
+            "name":"Create Account",
+            "description":"Sign up for free in seconds.No credit card required to get started",
+            "image":"https://i.ibb.co.com/2YNsb6WJ/user.png"
+        },
+        {
+            "id":2,
+            "circle":2,
+            "name":"Choose Product",
+            "description":"Browse our cataloge and select the tools that fit your needs",
+            "image":"https://i.ibb.co.com/hF40ZN28/package.png"
+        },
+        {
+            "id":3,
+            "circle":3,
+            "name":"Start creating",
+            "description":"Downlod and start using your premium tools immediately ",
+            "image":"https://i.ibb.co.com/7N8wjs6k/rocket.png"
+        }
+    ]
+}

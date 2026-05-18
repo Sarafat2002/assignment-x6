@@ -62,7 +62,7 @@ const Selectedcard = ({ selected, setSelected,addData,setAddData }) => {
                 </div>
                 <div className='flex justify-center my-5'>
                   <button onClick={checkHandler }
-                   className=' cursor-pointer w-full px-6 py-2 bg-purple-700 text-white rounded-full'>Proceed tocheckout</button>
+                   className=' cursor-pointer w-full px-6 py-2 bg-purple-700 text-white rounded-full'>Proceed to checkout</button>
                 </div>
               </div>
             </div>
