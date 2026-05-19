@@ -1,0 +1,50 @@
+{
+    "Pricing":[
+        {
+            "id":1,
+            "name":"Starter",
+            "description":"Perfect to getting started",
+            "price":0,
+            "billing":"month",
+            "features":[
+                "Access to 10 free tools",
+                "Bacis tamplates",
+                "Community support",
+                "1 project for month"
+            ],
+            "btnText":"Get Started Free"
+        },
+        {
+            "id":1,
+            "name":"Pro",
+            "description":"Best for professional",
+            "price":29,
+            "billing":"month",
+            "features":[
+                "Access to all premium tools",
+                "Unlimited tamplates",
+                "Priority support",
+                "Unlimited project",
+                "Cloude sync",
+                "Advance analytics"
+            ],
+            "btnText":"Start pro trail"
+        },
+        {
+            "id":1,
+            "name":"Enterprise",
+            "description":"For teams and Businesses",
+            "price":99,
+            "billing":"month",
+            "features":[
+                "Everything in pro",
+                "Team collabaration",
+                "Custom intigrations",
+                "Dedicated support",
+                "SLA gaurantee",
+                "Custom branding"
+            ],
+            "btnText":"Contact Sales"
+        }
+    ]
+}

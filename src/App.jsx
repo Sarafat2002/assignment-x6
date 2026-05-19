@@ -6,6 +6,8 @@ import Hero from './Components/HeroSection/Hero'
 import Nav from './Components/NavSection/Nav'
 import Tools from './Components/Tools/Tools'
 import Step from './Components/StepSection/Step'
+import Pricing from './Components/Pricing/Pricing'
+import Footer from './Components/Footer/Footer'
 
 const productsJason = async () => {
   const response = await fetch("/Products.json")
@@ -18,6 +20,7 @@ function App() {
   const [selected, setSelected] = useState([]);
   const [steps, setSteps] = useState([]);
 
+
   const jasonProps = productsJason();
 
   useEffect(() => {
@@ -25,9 +28,9 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setSteps(data.steps);
-        console.log(steps)
       })
   }, []);
+
 
   return (
     <>
@@ -38,6 +41,8 @@ function App() {
         <Cards jasonProps={jasonProps} selected={selected} setSelected={setSelected} />
       </Suspense>
       <Step steps={steps} setSteps={setSteps} />
+      <Pricing/>
+      <Footer/>
     </>
   )
 }
