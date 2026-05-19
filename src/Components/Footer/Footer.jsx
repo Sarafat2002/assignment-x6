@@ -5,7 +5,7 @@ import { FaSquareFacebook, FaXTwitter } from 'react-icons/fa6'
 const Footer = () => {
     return (
         <div className='bg-blue-950 mt-20 p-20'>
-            <div className='grid grid-cols-5 gap-20 mx-auto w-[90%] text-gray-300 leading-loose'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-5 gap-20 mx-auto w-[90%] text-gray-300 leading-loose'>
                 <div>
                     <h1 className='font-bold text-3xl text-white'>DigiTools</h1>
                     <p className='pt-6'>Premium digital tools for creators,<br />professional and businesses.Work smarter<br />with our suite of powerful tools</p>
@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className='text-gray-500 my-5' />
-            <div className='flex justify-between w-[91%] mx-auto text-white'>
+            <div className='flex flex-col md:flex-row md:justify-between w-[91%] mx-auto text-white'>
                 <div>
                     <p>© 2026 Digitools. All rights reserved.</p>
                 </div>

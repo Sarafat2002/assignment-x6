@@ -8,7 +8,7 @@ const Step = ({ steps, setSteps }) => {
             <h1 className='text-3xl font-bold pt-10'>Get Started 3 Steps</h1>
             <p className='text-gray-500 py-5'>start using primium</p>
 
-            <div className='grid grid-cols-3 gap-10 w-[91%] mx-auto p-14  cursor-pointer '>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 w-[91%] mx-auto p-14  cursor-pointer '>
                 {
                     steps?.map((step) => {
                         return (

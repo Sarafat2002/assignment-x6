@@ -23,7 +23,7 @@ const Pricing = () => {
             <h1 className='text-3xl font-bold text-center'>Simple,Transparent Pricing</h1>
             <p className='text-center text-gray-500 py-10' >Choose the palns that fits your needs.Upgrade or downgrade anytime</p>
 
-            <div className='grid grid-cols-3 gap-6 w-[91%] mx-auto'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-[91%] mx-auto'>
                 {
                     pricing?.map((price,index) => {
                         return (
@@ -55,7 +55,7 @@ const Pricing = () => {
                                                 <li className={`
                                                      flex gap-3 items-center
                                                     ${index===1?"text-white":"text-gray-500"}
-                                                    `} key={index}><FaCheck className={`
+                                                    `} key={feauterdex}><FaCheck className={`
                                                         ${index===1?"text-white":"text-green-500"}
                                                         `}/>{item}</li>
                                             )

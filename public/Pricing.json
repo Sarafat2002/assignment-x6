@@ -15,7 +15,7 @@
             "btnText":"Get Started Free"
         },
         {
-            "id":1,
+            "id":2,
             "name":"Pro",
             "description":"Best for professional",
             "price":29,
@@ -31,7 +31,7 @@
             "btnText":"Start pro trail"
         },
         {
-            "id":1,
+            "id":3,
             "name":"Enterprise",
             "description":"For teams and Businesses",
             "price":99,

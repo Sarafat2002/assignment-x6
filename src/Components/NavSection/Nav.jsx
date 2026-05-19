@@ -3,7 +3,7 @@ import { PiShoppingCart } from "react-icons/pi";
 
 const Nav = ({selected}) => {
     return (
-        <div className='shadow-md'>
+        <div className='sticky top-0 z-50 bg-white shadow-md'>
             <div className='flex justify-center gap-70 p-4 max-w-[91%] mx-auto items-center'>
             <div>
                 <h1 className='text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-700 bg-clip-text text-transparent'>DigiTools</h1>

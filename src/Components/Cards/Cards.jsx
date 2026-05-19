@@ -43,7 +43,7 @@ const Cards = ({ jasonProps, selected, setSelected }) => {
 
             {
                 showCart === "products" && (
-                    <div className='grid lg:grid-cols-3 gap-20 max-w-[91%] mx-auto'>
+                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-20 max-w-[91%] mx-auto'>
                         {
                             allData?.map((product) => {
                                 return (
